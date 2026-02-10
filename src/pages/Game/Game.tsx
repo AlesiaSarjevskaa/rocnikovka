@@ -6,6 +6,8 @@ import plankton_error from "../../Images/plankton_error.jpg";
 import plankton_motherboard from "../../Images/plankton_motherboard.jpg";
 import plankton_cpu from "../../Images/plankton_cpu.jpg";
 
+//TODO
+
 export default function Game() {
   const [selectedId, setSelectedId] = useState(null);
   const [placed, setPlaced] = useState({
