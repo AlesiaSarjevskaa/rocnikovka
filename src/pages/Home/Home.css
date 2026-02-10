@@ -1,0 +1,66 @@
+button {
+  width: 200px;
+  height: 100px;
+  font-size: 50px;
+  font-family: fantasy;
+  background-color: red;
+}
+
+button:hover {
+  background-color: rgb(106, 106, 255);
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+}
+
+#start_text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  color: rgb(115, 151, 140);
+}
+
+#first-line {
+  font-size: 35px;
+  font-weight: 300px;
+  font-family: fantasy;
+  line-height: 0.1;
+}
+#second-line {
+  font-size: 45px;
+  font-weight: 300px;
+  font-family: fantasy;
+  color: red;
+  line-height: 0.1;
+}
+#third-line {
+  line-height: 0.1;
+  font-size: 25px;
+  font-family: fantasy;
+  color: white;
+}
+#fourth-line {
+  line-height: 0.1;
+  font-size: 25px;
+  font-family: fantasy;
+  color: white;
+}
+
+img {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 350px;
+  pointer-events: none;
+
+}
+
+body {
+  background-color: black;
+}

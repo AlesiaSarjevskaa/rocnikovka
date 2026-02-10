@@ -1,0 +1,31 @@
+<div>
+      <img src={pccase} alt="pccase" className="pccase" />
+      <Link to={"/"}>
+        <button className="button">back</button>
+      </Link>
+
+      <div
+        className="zakladniDeska"
+        onClick={() => setSelectedId(3)}
+        style={
+          placed[3]
+            ? {
+                width: "315px",
+                height: "265px",
+                top: "400px",
+                left: "1050px",
+              }
+            : {}
+        }
+      ></div>
+
+      <div
+        className="mistoProZakladniDesku"
+        onClick={() => {
+          if (selectedId === 3) {
+            setPlaced((prev) => ({ ...prev, 3: true }));
+            setSelectedId(null);
+          }
+        }}
+      ></div>
+    </div>

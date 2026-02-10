@@ -1,0 +1,32 @@
+PROC MI NESTACILO setSelected, selected, false/true?
+    true/false říká jen ANO/NE
+    ale neříká KTERÁ komponenta
+    👉 Když máš víc komponent:
+    nevíš, která je vybraná
+    nevíš, která je položená
+    Proto:
+    ➡️ potřebujeme identifikátor (ID)
+<< STAV SELECTEDID >>
+    const [selectedId, setSelectedId] = useState(null);
+    Význam:
+    selectedId = ID komponenty, na kterou jsem klikla
+    null = žádná komponenta není vybraná
+
+     HODNOTA   VYZNAM               
+    | null    | nic nemám vybrané    |
+    | 1       | vybraná komponenta 1 |
+    | 2       | vybraná komponenta 2 |
+
+<< STAV PLACED >>
+    const [placed, setPlaced] = useState({
+    1: false,
+    2: false,
+        });
+
+    Co je to:
+    objekt
+    každá komponenta má vlastní stav
+
+    ID	  HODNOTA     VYZNAM
+    1	| false	    | komponenta 1 ještě není položená
+    2	| true	    | komponenta 2 už je položená
